@@ -1,15 +1,14 @@
 import "./App.css";
-import { Home } from "./Home";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./components/layout/navbar/Navbar";
+import { ProductsListContainer } from "./components/pages/itemListContainer/ProductsListContainer";
 
-function App() {
+const App = () => {
   return (
     <div>
-      <h1>Estoy en app</h1>
       <Navbar />
-      <Home />
+      <ProductsListContainer />
     </div>
   );
-}
+};
 
 export default App;
